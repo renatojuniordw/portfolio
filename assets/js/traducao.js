@@ -14,8 +14,11 @@ let TRANSLATIONS = {
         'span-saudacao': 'Hello, my name is',
         'ap-work': 'Web developer',
         'sobre': 'About me',
-        'apresentacao': `Graduated in Internet Systems, I am ${calcularIdade()} years old, I am passionate about technology, I am currently acting as Software Engineer - Full in a multinational located in Porto Digital of Recife, with a focus on Front-end in SharePoint solutions. I like to be challenged and I'm always looking to get out of my comfort zone.`,
+        'apresentacao': `Graduated in Internet Systems, I am ${calcularIdade()} years old, passionate about technology, currently working as a Software Engineer - Full at a multinational located in Porto Digital of Recife, focusing on Front-end of SharePoint solutions. I like to be challenged and I'm always looking to get out of my comfort zone.`,
+        
+        'ap-work-1': 'Web development',
         'ap-work-2': 'Application Development',
+
         'formacao': 'FORMATION',
         'curso': 'Systems for internet',
         'titulo-referencia': 'PROFESSIONAL REFERENCES',
@@ -31,6 +34,7 @@ let TRANSLATIONS = {
         'atv-avanade-4': 'SharePoint Framework with React;',
 
         'portfolio': 'Portfolio',
+
         'desc-frequency': 'The Frequency FICR was a project developed at the college to conclude the course',
         'btn-detalhes': '+ Details',
         'desc-coogema': 'Volunteer work for COOGEMA, an NGO, self-sustaining, of technical members, who comes to solve management and innovation problems of social entities, with the objective of reconciling social, technological, educational, environmental, economic and cultural aspects, generating values and productive impact. ',
@@ -38,6 +42,7 @@ let TRANSLATIONS = {
         'desc-ariano': 'First project developed as a web developer, at CRC Recife.',
         'oque-faco': 'What do I do',
         'certicacao': 'CERTIFICATIONS',
+        'periodo-avanade': '05/2018 - Current',
     },
     'pt-br': {
         'mh-home': 'Página inicial',
@@ -47,7 +52,8 @@ let TRANSLATIONS = {
         'span-saudacao': 'Olá, me chamo',
         'ap-work': 'Desenvolvedor Web',
         'sobre': 'Sobre mim',
-        'apresentacao': `Formado em Sistemas para internet, tenho ${calcularIdade()} anos, sou apaixonado por tecnológia, atualmente estou atuando como Software Engineer - Pleno em uma multinacional localizada no Porto Digital de Recife, com o foco em Front-end em soluções em SharePoint. Gosto de ser desafiado e estou sempre buscando sair da minha zona de conforto.`,
+        'apresentacao': `Formado em Sistemas para internet, tenho ${calcularIdade()} anos, apaixonado por tecnologia, atualmente estou atuando como Software Engineer - Pleno em uma multinacional localizada no Porto Digital de Recife, com o foco em Front-end de soluções SharePoint. Gosto de ser desafiado e estou sempre buscando sair da minha zona de conforto.`,
+        'ap-work-1': 'Desenvolvimento web',
         'ap-work-2': 'Desenvolvimento de Aplicativos',
         'formacao': 'FORMAÇÃO',
         'curso': 'Sistemas para internet',
@@ -71,6 +77,7 @@ let TRANSLATIONS = {
         'desc-ariano': ' Primeiro projeto desenvolvido como desenvolvedor web, no CRC Recife.',
         'oque-faco': 'O que faço',
         'certicacao': 'CERTIFICAÇÕES',
+        'periodo-avanade': '05/2018 - Atual',
 
     }
 };
