@@ -1,11 +1,12 @@
+let idiomaPadrao = 'pt-br';
+let DATA_LANG_ELEMENTS = document.querySelectorAll('[data-lang-str]');
+
 $(document).ready(function () {
-    translate("pt-br");
+    // iniciar o site com o idioma do navegador
+    translate(navigator.language);
 });
 
-
-let DEFAULT_LANG = 'pt-br';
-let DATA_LANG_ELEMENTS = document.querySelectorAll('[data-lang-str]');
-let TRANSLATIONS = {
+let configTraducoes = {
     'en': {
         'mh-home': 'Home page',
         'mh-about': 'About me',
@@ -15,7 +16,7 @@ let TRANSLATIONS = {
         'ap-work': 'Web developer',
         'sobre': 'About me',
         'apresentacao': `Graduated in Internet Systems, I am ${calcularIdade()} years old, passionate about technology, currently working as a Software Engineer - Full at a multinational located in Porto Digital of Recife, focusing on Front-end of SharePoint solutions. I like to be challenged and I'm always looking to get out of my comfort zone.`,
-        
+
         'ap-work-1': 'Web development',
         'ap-work-2': 'Application Development',
 
@@ -52,7 +53,7 @@ let TRANSLATIONS = {
         'span-saudacao': 'Olá, me chamo',
         'ap-work': 'Desenvolvedor Web',
         'sobre': 'Sobre mim',
-        'apresentacao': `Formado em Sistemas para internet, tenho ${calcularIdade()} anos, apaixonado por tecnologia, atualmente estou atuando como Software Engineer - Pleno em uma multinacional localizada no Porto Digital de Recife, com o foco em Front-end de soluções SharePoint. Gosto de ser desafiado e estou sempre buscando sair da minha zona de conforto.`,
+        'apresentacao': `Graduated in Internet Systems, I am ${calcularIdade()} years old, passionate about technology, currently working as a Software Engineer - Plenary in a multinational located in Porto Digital of Recife, focusing on Front-end of SharePoint solutions. I like to be challenged and I'm always looking to get out of my comfort zone.`,
         'ap-work-1': 'Desenvolvimento web',
         'ap-work-2': 'Desenvolvimento de Aplicativos',
         'formacao': 'FORMAÇÃO',
@@ -83,28 +84,30 @@ let TRANSLATIONS = {
 };
 
 const translate = (lang = null) => {
-    if (lang === null) {
-        lang = DEFAULT_LANG;
+    if (lang === null && lang != 'pt-br' && lang != 'en') {
+        lang = idiomaPadrao;
     }
+
     // Verifica se o idioma selecionado existe.
-    if (TRANSLATIONS[lang]) {
+    if (configTraducoes[lang]) {
         DATA_LANG_ELEMENTS.forEach((el) => {
             let STR = el.getAttribute('data-lang-str');
-            if (TRANSLATIONS[lang][STR]) {
-                el.innerText = (TRANSLATIONS[lang][STR]);
+            if (configTraducoes[lang][STR]) {
+                el.innerText = (configTraducoes[lang][STR]);
             }
         });
     }
 }
 
-let BTNS_TRANSLATE = document.querySelectorAll('[name=btn-translate]');
-BTNS_TRANSLATE.forEach((btn) => {
+let btnIdioma = document.querySelectorAll('[name=btn-translate]');
+btnIdioma.forEach((btn) => {
     btn.addEventListener('click', (ev) => {
         translate(btn.getAttribute('data-lang'));
     });
 });
 
 function calcularIdade() {
+    // A idade será calculada levando em consideração a data atual
     return Math.floor(moment(new Date()).diff(moment("1996-12-15"), 'years', true));
 }
 
