@@ -14,7 +14,7 @@ let TRANSLATIONS = {
         'span-saudacao': 'Hello, my name is',
         'ap-work': 'Web developer',
         'sobre': 'About me',
-        'apresentacao': "My name is Renato, I've been working as a Web Developer since 2017.",
+        'apresentacao': `Graduated in Internet Systems, I am ${calcularIdade()} years old, I am passionate about technology, I am currently acting as Software Engineer - Full in a multinational located in Porto Digital of Recife, with a focus on Front-end in SharePoint solutions. I like to be challenged and I'm always looking to get out of my comfort zone.`,
         'ap-work-2': 'Application Development',
         'formacao': 'FORMATION',
         'curso': 'Systems for internet',
@@ -47,7 +47,7 @@ let TRANSLATIONS = {
         'span-saudacao': 'Olá, me chamo',
         'ap-work': 'Desenvolvedor Web',
         'sobre': 'Sobre mim',
-        'apresentacao': 'Meu nome é Renato, trabalho como Desenvolvedor Web desde 2017.',
+        'apresentacao': `Formado em Sistemas para internet, tenho ${calcularIdade()} anos, sou apaixonado por tecnológia, atualmente estou atuando como Software Engineer - Pleno em uma multinacional localizada no Porto Digital de Recife, com o foco em Front-end em soluções em SharePoint. Gosto de ser desafiado e estou sempre buscando sair da minha zona de conforto.`,
         'ap-work-2': 'Desenvolvimento de Aplicativos',
         'formacao': 'FORMAÇÃO',
         'curso': 'Sistemas para internet',
@@ -96,4 +96,8 @@ BTNS_TRANSLATE.forEach((btn) => {
         translate(btn.getAttribute('data-lang'));
     });
 });
+
+function calcularIdade() {
+    return Math.floor(moment(new Date()).diff(moment("1996-12-15"), 'years', true));
+}
 
