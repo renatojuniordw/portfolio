@@ -53,7 +53,7 @@ let configTraducoes = {
         'span-saudacao': 'Olá, me chamo',
         'ap-work': 'Desenvolvedor Web',
         'sobre': 'Sobre mim',
-        'apresentacao': `Graduated in Internet Systems, I am ${calcularIdade()} years old, passionate about technology, currently working as a Software Engineer - Plenary in a multinational located in Porto Digital of Recife, focusing on Front-end of SharePoint solutions. I like to be challenged and I'm always looking to get out of my comfort zone.`,
+        'apresentacao': `Formado em Sistemas para internet, ${calcularIdade()} anos. Apaixonado por tecnologia. Atualmente estou atuando como Software Engineer - Pleno em uma multinacional localizada no Porto Digital em Recife, com o foco em Front-end de soluções SharePoint. Gosto de ser desafiado e estou sempre buscando sair da minha zona de conforto.`,
         'ap-work-1': 'Desenvolvimento web',
         'ap-work-2': 'Desenvolvimento de Aplicativos',
         'formacao': 'FORMAÇÃO',
