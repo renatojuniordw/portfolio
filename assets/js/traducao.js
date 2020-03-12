@@ -3,7 +3,7 @@ let DATA_LANG_ELEMENTS = document.querySelectorAll('[data-lang-str]');
 
 $(document).ready(function () {
     // iniciar o site com o idioma do navegador
-    translate(navigator.language);
+    translate(idiomaPadrao);
 });
 
 let configTraducoes = {
@@ -84,7 +84,7 @@ let configTraducoes = {
 };
 
 const translate = (lang = null) => {
-    if (lang === null && lang != 'pt-br' && lang != 'en') {
+    if (lang === null) {
         lang = idiomaPadrao;
     }
 
