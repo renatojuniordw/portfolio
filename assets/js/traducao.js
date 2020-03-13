@@ -32,7 +32,9 @@ let configTraducoes = {
         'atv-avanade-1': 'Development and maintenance on SharePoint systems;',
         'atv-avanade-2': 'Development and maintenance of WEB systems (HTML5, CSS3, JavaScript);',
         'atv-avanade-3': 'Database manipulation, using SQL Server;',
-        'atv-avanade-4': 'SharePoint Framework with React;',
+        'atv-avanade-4': 'SharePoint Framework with\ g React;',
+        "atv-avanade-6": "Business Connectivity Services in SharePoint, using SQL Server on Azure;",
+        "atv-avanade-7": "Web API with C #.",
 
         'portfolio': 'Portfolio',
 
@@ -43,7 +45,7 @@ let configTraducoes = {
         'desc-ariano': 'First project developed as a web developer, at CRC Recife.',
         'oque-faco': 'What do I do',
         'certicacao': 'CERTIFICATIONS',
-        'periodo-avanade': '05/2018 - Current',
+        'periodo-avanade': '05/2019 - Current',
     },
     'pt-br': {
         'mh-home': 'Página inicial',
@@ -69,6 +71,8 @@ let configTraducoes = {
         'atv-avanade-2': 'Desenvolvimento e manutenção de sistemas WEB (HTML5, CSS3, JavaScript);',
         'atv-avanade-3': 'Manipulação de Banco de Dados, utilizando o SQL Server;',
         'atv-avanade-4': 'SharePoint Framework com React;',
+        "atv-avanade-6": "Serviços Corporativos de Conectividade no SharePoint, utilizando o SQL Server no Azure;",
+        "atv-avanade-7": "Web API com C#.",
 
         'portfolio': 'Portfólio',
         'desc-frequency': 'O Frequency FICR foi projeto desenvolvido na faculdade para conclusão de curso',
@@ -78,7 +82,7 @@ let configTraducoes = {
         'desc-ariano': ' Primeiro projeto desenvolvido como desenvolvedor web, no CRC Recife.',
         'oque-faco': 'O que faço',
         'certicacao': 'CERTIFICAÇÕES',
-        'periodo-avanade': '05/2018 - Atual',
+        'periodo-avanade': '05/2019 - Atual',
 
     }
 };
