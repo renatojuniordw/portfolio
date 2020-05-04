@@ -1,5 +1,5 @@
 # O Projeto
-Resumo profissional Renato Junior, formado em Sistemas para internet e Microsoft Certified.
+Resumo profissional Renato Bezerra, formado em Sistemas para internet e Microsoft Certified.
 
 # Neste projeto foi adicionado:
 <ul>
