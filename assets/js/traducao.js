@@ -9,13 +9,13 @@ $(document).ready(function () {
 let configTraducoes = {
     'en': {
         'mh-home': 'Home page',
-        'mh-about': 'About me',
+        'mh-about': 'About',
         'mh-experience': 'Experiences',
         'mh-portfolio': 'Portfolio',
         'span-saudacao': 'Hello, my name is',
         'ap-work': 'Web developer',
-        'sobre': 'About me',
-        'apresentacao': `Graduated in Internet Systems. I'm ${calcularIdade()} years old and passionate about technology. Nowadays I work as Software Engineer-Middle in a multinational at Porto Digital in Recife, focused on Front-end inSharePoint solutions. I like to be challeged and I'm always trying to quit my comfort zone.`,
+        'apresentacao': `My name is Renato Bezerra, ${calcularIdade()} years old, I work as a Front-End developer and I have a degree in Internet Systems from FICR - Faculdade Católica Imaculada Conceição do Recife.
+        I work as a Software Engineer - Full in a multinational located in Porto Digital in Recife and I am always willing to face new challenges.`,
 
         'ap-work-1': 'Web development',
         'ap-work-2': 'Application Development',
@@ -34,7 +34,8 @@ let configTraducoes = {
         'atv-avanade-3': 'Database manipulation, using SQL Server;',
         'atv-avanade-4': 'SharePoint Framework with\ g React;',
         "atv-avanade-6": "Business Connectivity Services in SharePoint, using SQL Server on Azure;",
-        "atv-avanade-7": "Web API with C #.",
+        "atv-avanade-7": "Web API with C #;",
+        "atv-avanade-8": "Development and maintenance on Systems Angular;",
 
         'portfolio': 'Portfolio',
 
@@ -49,13 +50,13 @@ let configTraducoes = {
     },
     'pt-br': {
         'mh-home': 'Página inicial',
-        'mh-about': 'Sobre mim',
+        'mh-about': 'Sobre',
         'mh-experience': 'Experiências',
         'mh-portfolio': 'Portfólio',
         'span-saudacao': 'Olá, me chamo',
         'ap-work': 'Desenvolvedor Web',
-        'sobre': 'Sobre mim',
-        'apresentacao': `Formado em Sistemas para internet, ${calcularIdade()} anos. Apaixonado por tecnologia. Atualmente estou atuando como Software Engineer - Pleno em uma multinacional localizada no Porto Digital em Recife, com o foco em Front-end de soluções SharePoint. Gosto de ser desafiado e estou sempre buscando sair da minha zona de conforto.`,
+        'apresentacao': `Me chamo Renato Bezerra, ${calcularIdade()} anos, atuo como desenvolvedor Front-End e sou formado em Sistemas para internet pela FICR - Faculdade Católica Imaculada Conceição do Recife.
+        Atuo como Software Engineer - Pleno em uma multinacional localizada no Porto Digital em Recife e estou sempre disposto a encarar novos desafios.`,
         'ap-work-1': 'Desenvolvimento web',
         'ap-work-2': 'Desenvolvimento de Aplicativos',
         'formacao': 'FORMAÇÃO',
@@ -72,7 +73,8 @@ let configTraducoes = {
         'atv-avanade-3': 'Manipulação de Banco de Dados, utilizando o SQL Server;',
         'atv-avanade-4': 'SharePoint Framework com React;',
         "atv-avanade-6": "Serviços Corporativos de Conectividade no SharePoint, utilizando o SQL Server no Azure;",
-        "atv-avanade-7": "Web API com C#.",
+        "atv-avanade-7": "Web API com C#;",
+        "atv-avanade-8": "Desenvolvimento e manutenção em Sistemas Angular;",
 
         'portfolio': 'Portfólio',
         'desc-frequency': 'O Frequency FICR foi projeto desenvolvido na faculdade para conclusão de curso',
